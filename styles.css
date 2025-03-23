@@ -1,0 +1,345 @@
+/* Custom styles for the webpage */
+
+/* Navbar Styles */
+.navbar-brand {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #e2e8f0; /* Light gray on hover */
+}
+
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    background-image: url(./src/cafe1.jpeg); /* Gambar latar belakang */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 4s forwards; /* Animasi untuk konten */
+}
+
+/* Animasi untuk teks 'Selamat Datang' */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeInText 2s ease-out forwards;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    animation: fadeInText 2.5s ease-out forwards; /* Diberi delay agar teks deskripsi muncul setelah judul */
+}
+
+.cta-button {
+    background-color: #38a169; /* Tailwind Green */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2f855a; /* Darker green on hover */
+}
+
+/* Animasi untuk teks */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #38a169; /* Tailwind Green */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2f855a; /* Darker green on hover */
+}
+
+/* Menu Section Styles */
+.menu-section {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+ 
+.menu-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: #edf2f7;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item-description {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38a169; /* Tailwind Green */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #f7fafc;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contact-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 1.25rem;
+    background-color: #38a169;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #2f855a;
+}
+
+
+/* Footer Styles */
+.tentang {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 3rem 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 33%;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fbbf24; /* Tailwind Yellow */
+}
+
+.footer-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fbbf24; /* Tailwind Yellow */
+}
+
+.open-hours {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.open-hours li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.newsletter-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #fbbf24;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+    background-color: #eab308;
+}
+
+.footer {
+    background-color: #38a169;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
