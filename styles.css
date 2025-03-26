@@ -311,6 +311,23 @@
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+.social-media {
+    margin: 20px 0;
+    display: flex;
+    width:fit-content;
+    max-height: max-content;
+}
+
+.social-icon {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
 
 .newsletter-input {
     width: 100%;
